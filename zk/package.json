@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@ethersproject/bignumber": "^5.7.0",
+    "@zk-kit/poseidon-proof": "^1.0.0-beta.6",
+    "js-sha256": "^0.11.0"
+  }
+}
