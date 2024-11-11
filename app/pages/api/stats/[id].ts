@@ -17,7 +17,7 @@ export default async function handler(
     },
   });
 
-  const stats = responses.reduce<Record<string, number>>(
+  const stats = responses.reduce(
     (
       acc: Record<string, number>,
       curr: { digest: string; _count: { digest: number } }
@@ -25,7 +25,7 @@ export default async function handler(
       ...acc,
       [curr.digest]: curr._count.digest,
     }),
-    {}
+    {} as Record<string, number>
   );
 
   res.status(200).json(stats);
