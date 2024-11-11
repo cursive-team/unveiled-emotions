@@ -123,7 +123,7 @@ export default function PhotoPage() {
           <div className="relative py-3 sm:max-w-xl sm:mx-auto w-full px-4 sm:px-0">
             <div className="flex flex-col items-center space-y-1">
               <h1 className="text-2xl font-bold font-jura text-center text-white tracking-widest">
-                'Unveiling Emotions'
+                {`'Unveiling Emotions'`}
               </h1>
               <p className="text-white font-bold font-jura">by Gordon Berger</p>
 
@@ -194,7 +194,7 @@ export default function PhotoPage() {
           <div className="flex flex-col items-center w-full space-y-8">
             <div className="flex flex-col items-center space-y-1">
               <h1 className="text-2xl font-bold font-jura text-center text-white tracking-widest">
-                'Unveiling Emotions'
+                {`'Unveiling Emotions'`}
               </h1>
               <p className="text-white font-bold font-jura">by Gordon Berger</p>
             </div>
