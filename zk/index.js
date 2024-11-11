@@ -47,3 +47,5 @@ async function runZKProof(emotion) {
     "0x" + BigInt(fullProof.digest).toString(16)
   );
 }
+
+runZKProof("happy");
