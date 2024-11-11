@@ -17,8 +17,11 @@ export default async function handler(
     },
   });
 
-  const stats = responses.reduce(
-    (acc, curr) => ({
+  const stats = responses.reduce<Record<string, number>>(
+    (
+      acc: Record<string, number>,
+      curr: { digest: string; _count: { digest: number } }
+    ) => ({
       ...acc,
       [curr.digest]: curr._count.digest,
     }),
